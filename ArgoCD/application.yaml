@@ -15,23 +15,6 @@ spec:
           - values.yaml
           - values/redis.yaml
 
-    - repoURL: git@github.com:bendraabdelali/Microservice-Automated-Deployment-to-kubernetes-Cluster.git
-      targetRevision: HEAD
-      path: charts/Microservices
-      helm:
-        valueFiles:
-          - values.yaml
-          - values/adservice.yaml
-          - values/checkoutservice.yaml
-          - values/currencyservice.yaml
-          - values/emailservice.yaml
-          - values/frontend.yaml
-          - values/paymentservice.yaml
-          - values/productcatalogservice.yaml
-          - values/recommendationservice.yaml
-          - values/shippingservice.yaml
-          - values/cartservice
-
   destination:
     server: https://kubernetes.default.svc
     namespace: myapp
