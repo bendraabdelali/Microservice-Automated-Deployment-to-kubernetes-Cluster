@@ -1,5 +1,5 @@
 <br>
 
 <p align="center">
-  <img src="./docs/Architecture.png" />
+  <img src="./docs/img/Architecture.png" />
 </p>
