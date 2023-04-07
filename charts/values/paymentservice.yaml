@@ -1,0 +1,35 @@
+serviceName: paymentservice
+Namespace: microservices
+replicaCount: 1
+containerPort: 50051
+servicePort: 50051
+
+containerEnv:
+  - name: PORT
+    value: "50051"
+  - name: DISABLE_PROFILER
+    value: "1"
+
+image:
+  repository: microservicesb.azurecr.io/paymentservice
+  pullPolicy: IfNotPresent
+  #tag: "v0.2.3"
+
+HealthCheck: True
+
+# readinessProbe:
+#   periodSeconds: 5
+#   exec:
+#   command: ["/bin/grpc_health_probe", "-addr=:50051"]
+# livenessProbe:
+#   periodSeconds: 5
+#   exec:
+#   command: ["/bin/grpc_health_probe", "-addr=:50051"]
+readinessProbe:
+  periodSeconds: 5
+  tcpSocket:
+    port: 50051
+livenessProbe:
+  periodSeconds: 5
+  tcpSocket:
+    port: 50051

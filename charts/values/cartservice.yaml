@@ -1,0 +1,13 @@
+serviceName: cartservice
+Namespace: microservices
+replicaCount: 1
+containerPort: 7070
+servicePort: 7070
+
+containerEnv:
+  - name: REDIS_ADDR
+    value: "redis-cart:6379"
+image:
+  repository: microservicesb.azurecr.io/cartservice
+  pullPolicy: IfNotPresent
+  #tag:
