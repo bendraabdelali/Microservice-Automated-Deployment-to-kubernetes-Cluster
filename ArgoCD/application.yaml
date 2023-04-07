@@ -13,7 +13,7 @@ spec:
       helm:
         valueFiles:
           - values.yaml
-          - values/redis.yaml
+          - ../values/redis.yaml
 
   destination:
     server: https://kubernetes.default.svc
