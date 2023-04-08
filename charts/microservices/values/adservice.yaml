@@ -11,9 +11,9 @@ containerEnv:
     value: "1"
 
 image:
-  repository: microservicesb.azurecr.io/adservice:1.1.1
+  repository: microservicesb.azurecr.io/adservice
   pullPolicy: IfNotPresent
-  tag: "v0.6.0"
+  tag: "1.1.1"
 
 readinessProbe:
   periodSeconds: 5
