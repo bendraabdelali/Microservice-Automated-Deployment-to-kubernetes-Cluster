@@ -13,11 +13,9 @@ containerEnv:
     value: "1"
 
 image:
-  repository: gcr.io/google-samples/microservices-demo/recommendationservice
-
-  #microservicesb.azurecr.io/recommendationservice
+  repository: microservicesb.azurecr.io/recommendationservice
   pullPolicy: IfNotPresent
-  tag: "v0.6.0"
+  tag: "1.1.1"
 
 HealthCheck: True
 
