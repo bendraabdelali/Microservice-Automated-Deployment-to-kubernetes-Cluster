@@ -11,10 +11,9 @@ containerEnv:
     value: "1"
 
 image:
-  repository: gcr.io/google-samples/microservices-demo/currencyservice
-  #microservicesb.azurecr.io/currencyservice
+  repository: microservicesb.azurecr.io/currencyservice
   pullPolicy: IfNotPresent
-  tag: "v0.6.0"
+  tag: "1.1.1"
 
 HealthCheck: True
 

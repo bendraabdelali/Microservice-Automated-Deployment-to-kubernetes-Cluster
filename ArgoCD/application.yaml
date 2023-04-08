@@ -94,6 +94,7 @@ spec:
         valueFiles:
           - values.yaml
           - values/frontend.yaml
+
   destination:
     server: https://kubernetes.default.svc
     namespace: microservices

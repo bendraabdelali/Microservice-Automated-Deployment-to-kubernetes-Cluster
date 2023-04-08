@@ -11,10 +11,9 @@ containerEnv:
     value: "1"
 
 image:
-  repository: gcr.io/google-samples/microservices-demo/paymentservice
-  #microservicesb.azurecr.io/paymentservice
+  repository: microservicesb.azurecr.io/paymentservice
   pullPolicy: IfNotPresent
-  tag: "v0.6.0"
+  tag: "1.1.1"
 
 HealthCheck: True
 
