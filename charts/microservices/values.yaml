@@ -1,5 +1,5 @@
 serviceName: ""
-Namespace: microservices
+Namespace: argocd
 replicaCount: 1
 HealthCheck: false
 cpulimit: false

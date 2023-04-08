@@ -4,7 +4,7 @@ metadata:
   name: myapp-argo-application
   namespace: argocd
 spec:
-  project: default
+  project: microservices-helm
 
   sources:
     - repoURL: git@github.com:bendraabdelali/Microservice-Automated-Deployment-to-kubernetes-Cluster.git
@@ -21,7 +21,7 @@ spec:
       helm:
         valueFiles:
           - values.yaml
-          - values/emailservice
+          - values/emailservice.yaml
 
   destination:
     server: https://kubernetes.default.svc
