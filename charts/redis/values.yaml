@@ -31,3 +31,16 @@ securityContext:
   privileged: false
   readOnlyRootFilesystem: true
   runAsUser: 1000
+
+
+serviceName: redis-cart
+Namespace: microservices
+replicaCount: 1
+containerPort: 6379
+servicePort: 6379
+
+image:
+  repository: redis
+  pullPolicy: IfNotPresent
+  tag: "alpine"
+
