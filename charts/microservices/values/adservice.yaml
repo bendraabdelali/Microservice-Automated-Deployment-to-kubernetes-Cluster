@@ -14,7 +14,7 @@ image:
   repository: gcr.io/google-samples/microservices-demo/adservice
   #microservicesb.azurecr.io/adservice
   pullPolicy: IfNotPresent
-  tag: "v0.3.4"
+  tag: "v0.6.0"
 
 readinessProbe:
   periodSeconds: 5

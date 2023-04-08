@@ -11,4 +11,4 @@ image:
   repository: gcr.io/google-samples/microservices-demo/cartservice
   #microservicesb.azurecr.io/cartservice
   pullPolicy: IfNotPresent
-  tag: "v0.2.3"
+  tag: "v0.6.0"

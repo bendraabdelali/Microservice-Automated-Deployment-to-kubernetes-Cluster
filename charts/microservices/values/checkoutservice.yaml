@@ -24,7 +24,7 @@ image:
   repository: gcr.io/google-samples/microservices-demo/checkoutservice
   #microservicesb.azurecr.io/checkoutservice
   pullPolicy: IfNotPresent
-  tag: "v0.2.3"
+  tag: "v0.6.0"
 
 HealthCheck: True
 # readinessProbe:
