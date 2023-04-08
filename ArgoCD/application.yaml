@@ -31,6 +31,69 @@ spec:
           - values.yaml
           - values/recommendationservice.yaml
 
+    - repoURL: git@github.com:bendraabdelali/Microservice-Automated-Deployment-to-kubernetes-Cluster.git
+      targetRevision: HEAD
+      path: charts/microservices
+      helm:
+        valueFiles:
+          - values.yaml
+          - values/paymentservice.yaml
+
+    - repoURL: git@github.com:bendraabdelali/Microservice-Automated-Deployment-to-kubernetes-Cluster.git
+      targetRevision: HEAD
+      path: charts/microservices
+      helm:
+        valueFiles:
+          - values.yaml
+          - values/productcatalogservice.yaml
+
+    - repoURL: git@github.com:bendraabdelali/Microservice-Automated-Deployment-to-kubernetes-Cluster.git
+      targetRevision: HEAD
+      path: charts/microservices
+      helm:
+        valueFiles:
+          - values.yaml
+          - values/currencyservice.yaml
+
+    - repoURL: git@github.com:bendraabdelali/Microservice-Automated-Deployment-to-kubernetes-Cluster.git
+      targetRevision: HEAD
+      path: charts/microservices
+      helm:
+        valueFiles:
+          - values.yaml
+          - values/shippingservice.yaml
+
+    - repoURL: git@github.com:bendraabdelali/Microservice-Automated-Deployment-to-kubernetes-Cluster.git
+      targetRevision: HEAD
+      path: charts/microservices
+      helm:
+        valueFiles:
+          - values.yaml
+          - values/adservice.yaml
+
+    - repoURL: git@github.com:bendraabdelali/Microservice-Automated-Deployment-to-kubernetes-Cluster.git
+      targetRevision: HEAD
+      path: charts/microservices
+      helm:
+        valueFiles:
+          - values.yaml
+          - values/cartservice.yaml
+
+    - repoURL: git@github.com:bendraabdelali/Microservice-Automated-Deployment-to-kubernetes-Cluster.git
+      targetRevision: HEAD
+      path: charts/microservices
+      helm:
+        valueFiles:
+          - values.yaml
+          - values/checkoutservice.yaml
+
+    - repoURL: git@github.com:bendraabdelali/Microservice-Automated-Deployment-to-kubernetes-Cluster.git
+      targetRevision: HEAD
+      path: charts/microservices
+      helm:
+        valueFiles:
+          - values.yaml
+          - values/frontend.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: microservices

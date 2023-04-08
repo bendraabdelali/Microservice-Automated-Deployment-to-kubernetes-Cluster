@@ -11,9 +11,10 @@ containerEnv:
     value: "1"
 
 image:
-  repository: microservicesb.azurecr.io/shippingservice
+  repository: gcr.io/google-samples/microservices-demo/shippingservice
+  #microservicesb.azurecr.io/shippingservice
   pullPolicy: IfNotPresent
-  #tag: "v0.2.3"
+  tag: "v0.2.3"
 
 HealthCheck: True
 # readinessProbe:

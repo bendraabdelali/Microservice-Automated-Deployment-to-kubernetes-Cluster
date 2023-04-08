@@ -21,9 +21,10 @@ containerEnv:
     value: "cartservice:7070"
 
 image:
-  repository: microservicesb.azurecr.io/checkoutservice
+  repository: gcr.io/google-samples/microservices-demo/checkoutservice
+  #microservicesb.azurecr.io/checkoutservice
   pullPolicy: IfNotPresent
-  #tag: "v0.2.3"
+  tag: "v0.2.3"
 
 HealthCheck: True
 # readinessProbe:

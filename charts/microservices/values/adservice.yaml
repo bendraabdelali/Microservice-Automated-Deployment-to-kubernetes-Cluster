@@ -11,9 +11,10 @@ containerEnv:
     value: "1"
 
 image:
-  repository: microservicesb.azurecr.io/adservice
+  repository: gcr.io/google-samples/microservices-demo/adservice
+  #microservicesb.azurecr.io/adservice
   pullPolicy: IfNotPresent
-  #tag: "1.1.0"
+  tag: "v0.3.4"
 
 readinessProbe:
   periodSeconds: 5

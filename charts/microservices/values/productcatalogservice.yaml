@@ -11,9 +11,10 @@ containerEnv:
     value: "1"
 
 image:
-  repository: microservicesb.azurecr.io/productcatalogservice
+  repository: gcr.io/google-samples/microservices-demo/productcatalogservice
+  #microservicesb.azurecr.io/productcatalogservice
   pullPolicy: IfNotPresent
-  #tag: "v0.2.3"
+  tag: "v0.2.3"
 
 HealthCheck: True
 

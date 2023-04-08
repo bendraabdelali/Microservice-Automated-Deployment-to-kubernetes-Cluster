@@ -8,6 +8,7 @@ containerEnv:
   - name: REDIS_ADDR
     value: "redis-cart:6379"
 image:
-  repository: microservicesb.azurecr.io/cartservice
+  repository: gcr.io/google-samples/microservices-demo/cartservice
+  #microservicesb.azurecr.io/cartservice
   pullPolicy: IfNotPresent
-  #tag:
+  tag: "v0.2.3"
