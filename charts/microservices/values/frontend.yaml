@@ -23,10 +23,9 @@ containerEnv:
   - name: AD_SERVICE_ADDR
     value: "adservice:9555"
 image:
-  repository: gcr.io/google-samples/microservices-demo/frontend
-  #microservicesb.azurecr.io/frontend
+  repository: microservicesb.azurecr.io/frontend
   pullPolicy: IfNotPresent
-  tag: "v0.6.0"
+  tag: "1.1.1"
 
 HealthCheck: True
 
