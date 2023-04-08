@@ -11,9 +11,10 @@ containerEnv:
     value: 1
 
 image:
-  repository: microservicesb.azurecr.io/emailservice
+  repository: gcr.io/google-samples/microservices-demo/emailservice
+  #microservicesb.azurecr.io/emailservice
   pullPolicy: IfNotPresent
-  tag: "1.1.1"
+  tag: "v0.6.0"
 
 HealthCheck: True
 
