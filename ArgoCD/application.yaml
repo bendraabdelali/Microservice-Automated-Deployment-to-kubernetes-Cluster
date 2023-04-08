@@ -13,15 +13,21 @@ spec:
       helm:
         valueFiles:
           - values.yaml
+          - redis.yaml
 
   destination:
     server: https://kubernetes.default.svc
-    namespace: myapp
+    namespace: microservices
 
   syncPolicy:
-    syncOptions:
-      - CreateNamespace=true
+    retry:
+      limit: 2
 
     automated:
-      selfHeal: true
       prune: true
+      selfHeal: true
+      allowEmpty: false
+
+    syncOptions:
+      - CreateNamespace=true
+      - Replace=true
