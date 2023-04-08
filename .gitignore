@@ -1,2 +1,3 @@
 secret.txt
 ArgoCD/private-sshkey-secret.yaml
+config.yaml

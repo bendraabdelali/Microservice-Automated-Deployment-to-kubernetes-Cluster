@@ -15,6 +15,14 @@ spec:
           - values.yaml
           - redis.yaml
 
+    - repoURL: git@github.com:bendraabdelali/Microservice-Automated-Deployment-to-kubernetes-Cluster.git
+      targetRevision: HEAD
+      path: charts/microservices
+      helm:
+        valueFiles:
+          - values.yaml
+          - values/emailservice
+
   destination:
     server: https://kubernetes.default.svc
     namespace: microservices
