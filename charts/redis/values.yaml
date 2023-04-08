@@ -1,5 +1,5 @@
 serviceName: "redis-cart"
-Namespace: argocd
+Namespace: microservices
 replicaCount: 1
 
 containerMountPath: "/data"
