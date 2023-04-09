@@ -1,6 +1,6 @@
 variable "resource_group" {
   type    = string
-  default = "MyResource"
+  default = "kubernetes"
 }
 
 variable "location" {

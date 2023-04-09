@@ -1,3 +1,6 @@
 secret.txt
 ArgoCD/private-sshkey-secret.yaml
 config.yaml
+*/.terraform/*
+ProvisionK8S/.terraform.lock.hcl
+Jenkins/ProvisionVM/.terraform*
