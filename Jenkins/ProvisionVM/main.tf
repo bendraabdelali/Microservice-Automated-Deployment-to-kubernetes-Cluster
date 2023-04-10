@@ -68,12 +68,12 @@ resource "azurerm_network_interface" "NetworkInterface" {
 
 # Create a network security group
 resource "azurerm_network_security_group" "firewall" {
-  name                = "firewall"
+  name                = "firewall11"
   location            = data.azurerm_resource_group.rg.location
   resource_group_name = data.azurerm_resource_group.rg.name
 
   security_rule {
-    name                       = "SSH"
+    name                       = "SSH"  
     priority                   = 1001
     direction                  = "Inbound"
     access                     = "Allow"
@@ -83,10 +83,21 @@ resource "azurerm_network_security_group" "firewall" {
     source_address_prefix      = "*"
     destination_address_prefix = "VirtualNetwork"
   }
-
+  
+  security_rule {
+    name                       = "ui"
+    priority                   = 1002
+    direction                  = "Inbound"
+    access                     = "Allow"
+    protocol                   = "Tcp"
+    source_port_range          = "*"
+    destination_port_range     = "80"
+    source_address_prefix      = "*"
+    destination_address_prefix = "VirtualNetwork"
+  }
 
   security_rule {
-    name                       = "Jenkins UI"
+    name                       = "jenkinsui"
     priority                   = 1003
     direction                  = "Inbound"
     access                     = "Allow"
@@ -114,7 +125,7 @@ resource "azurerm_virtual_machine" "VM" {
     version   = "latest"
   }
 
-
+  
   storage_os_disk {
     name              = "myosdisk1"
     caching           = "ReadWrite"
