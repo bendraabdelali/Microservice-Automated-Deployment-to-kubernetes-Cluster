@@ -13,7 +13,7 @@ containerEnv:
 image:
   repository: microservicesb.azurecr.io/emailservice
   pullPolicy: IfNotPresent
-  tag: "1.1.48"
+  tag: "1.1.49"
 
 HealthCheck: True
 
