@@ -23,7 +23,7 @@ containerEnv:
 image:
   repository: microservicesb.azurecr.io/checkoutservice
   pullPolicy: IfNotPresent
-  tag: "1.1.1"
+  tag: "1.1.2"
 
 HealthCheck: True
 # readinessProbe:
