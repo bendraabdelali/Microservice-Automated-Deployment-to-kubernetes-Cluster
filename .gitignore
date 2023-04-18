@@ -6,3 +6,5 @@ ProvisionK8S/.terraform.lock.hcl
 Jenkins/ProvisionVM/.terraform*
 Jenkins/ProvisionVM/terraform*
 Rancher/rancher_data
+Rancher/RancherClusterProvisioning/.terraform*
+Rancher/RancherClusterProvisioning/terraform.tfstate*

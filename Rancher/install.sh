@@ -14,5 +14,4 @@ helm repo add jetstack https://charts.jetstack.io
  helm upgrade -i cert-manager jetstack/cert-manager --namespace cert-manager --create-namespace
 
  # helm install rancher
- helm upgrade -i rancher rancher-latest/rancher --create-namespace --namespace cattle-system --set hostname=rancher.dockr.life --set bootstrapPassword=bootStrapAllTheThings --set replicas=1 
-#  -- set global.cattle.psp.enabled: false
+ helm upgrade -i rancher rancher-latest/rancher --create-namespace --namespace cattle-system --set hostname=rancher.dockr.life --set bootstrapPassword=bootStrapAllTheThings --set replicas=1 --set global.cattle.psp.enabled=false
