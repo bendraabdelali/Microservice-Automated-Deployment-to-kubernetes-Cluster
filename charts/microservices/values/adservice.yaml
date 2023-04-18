@@ -13,7 +13,7 @@ containerEnv:
 image:
   repository: microservicesb.azurecr.io/adservice
   pullPolicy: IfNotPresent
-  tag: "1.1.38"
+  tag: "1.1.41"
 
 readinessProbe:
   periodSeconds: 5
