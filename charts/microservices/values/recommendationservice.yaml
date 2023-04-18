@@ -15,7 +15,7 @@ containerEnv:
 image:
   repository: microservicesb.azurecr.io/recommendationservice
   pullPolicy: IfNotPresent
-  tag: "1.1.2"
+  tag: "1.1.3"
 
 HealthCheck: True
 
