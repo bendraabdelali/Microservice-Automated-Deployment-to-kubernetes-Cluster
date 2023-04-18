@@ -10,4 +10,4 @@ containerEnv:
 image:
   repository: microservicesb.azurecr.io/cartservice
   pullPolicy: IfNotPresent
-  tag: "1.1.21"
+  tag: "1.1.22"
