@@ -50,19 +50,3 @@ spec:
         {{- end}}
       imagePullSecrets:
         - name: {{ .Values.imagePullSecrets }}
-         
-
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: {{ .Values.serviceName }}
-  namespace: {{ .Values.Namespace }}
-spec:
-  type: {{ .Values.serviceType }}
-  selector:
-    app: {{ .Values.serviceName }}
-  ports:
-  - protocol: TCP
-    port: {{ .Values.servicePort }}
-    targetPort: {{ .Values.containerPort }}

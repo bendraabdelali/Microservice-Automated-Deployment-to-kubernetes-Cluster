@@ -1,6 +1,7 @@
 serviceName: redis-cart
 Namespace: microservices
 replicaCount: 1
+
 containerPort: 6379
 servicePort: 6379
 

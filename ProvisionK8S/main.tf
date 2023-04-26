@@ -3,7 +3,7 @@ data "azurerm_resource_group" "rg" {
   name = var.resource_group
 }
 
-# create k8s 
+
 resource "azurerm_kubernetes_cluster" "aks" {
   name                = var.cluster_name
   kubernetes_version  = var.kubernetes_version
@@ -15,7 +15,6 @@ resource "azurerm_kubernetes_cluster" "aks" {
     node_count          = var.worker
     vm_size             = "Standard_DS2_v2" 
     type                = "VirtualMachineScaleSets"
-    # availability_zones  = [1, 2, 3]
     enable_auto_scaling = false
   }
 

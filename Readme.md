@@ -1,5 +1,4 @@
-<br>
+# Deploy a Microservices Application to Azure Kubernetes Service
 
-<p align="center">
-  <img src="./docs/img/Architecture.png" />
-</p>
+![](./docs/img/Architecture.png)
+

@@ -12,7 +12,7 @@
 
 - name: Install Java 11 using YUM.
   yum:
-    name: "{{java.VERSION}}"
+    name: "{{ java.VERSION }}"
     state: latest
   when: java_version.rc != 0  
   become: true
@@ -20,7 +20,7 @@
 
 - name: Download Jenkins repo  URL 
   get_url:
-    url: "{{jenkins.repo_URL}}"
+    url: "{{ jenkins.repo_URL }}"
     dest: /etc/yum.repos.d/jenkins.repo
   
   become: true
@@ -29,7 +29,7 @@
 - name: Import GPG Key
   rpm_key:
     state: present
-    key: "{{jenkins.gpg_key}}"
+    key: "{{ jenkins.gpg_key }}"
 
 - name: Check if jenkins aleardy installed 
   command: jenkins --version
