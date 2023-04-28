@@ -1,0 +1,9 @@
+- hosts: servers
+  become: true
+
+  roles:
+    - role: java
+    - role: jenkins_ci
+      vars:
+        - jenkins_admin_username: admin
+        - jenkins_admin_password: admin
