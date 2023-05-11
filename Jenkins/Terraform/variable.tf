@@ -1,17 +1,17 @@
 variable "resource_group" {
   type    = string
-  default = "kubernetes"
+  default = "Jenkins"
 }
 
 variable "location" {
-  type = string
+  type    = string
   default = "eastus2"
-  
+
 }
 
 variable "virtual_network" {
   type        = string
-  default     = "MyVirtualNetwork"
+  default     = "VirtualNetwork-01"
   description = "description"
 }
 variable "SubnetName" {
@@ -26,20 +26,30 @@ variable "NetworkInterface" {
 }
 variable "StorageAccount" {
   type        = string
-  default     = "mystorageabdo123"
+  default     = "storage-01"
   description = "description"
 }
 
 variable "StorageContainer" {
   type        = string
-  default     = "storagecontainer"
+  default     = "container01"
   description = "description"
 }
 
 variable "VM" {
   type        = string
-  default     = "vm1"
+  default     = "Jenkins"
   description = "description"
+}
+
+variable "vm_username" {
+  type        = string
+  description = "username of vm admin user"
+}
+
+variable "vm_password" {
+  type        = string
+  description = "password of vm admin user"
 }
 
 variable "SshPath" {
