@@ -7,8 +7,10 @@ metadata:
     argocd.argoproj.io/secret-type: repo-creds
 stringData:
   type: git
-  url: git@github.com:tiwarisanjay
+  url: git@github.com:ysfesr
   sshPrivateKey: |
     -----BEGIN OPENSSH PRIVATE KEY-----
-    blahblahblah
+
+    SSH Key Here
+    
     -----END OPENSSH PRIVATE KEY-----

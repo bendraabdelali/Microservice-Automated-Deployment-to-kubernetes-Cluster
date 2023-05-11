@@ -6,9 +6,6 @@ cpulimit: false
 
 serviceAccountName: default
 
-#containerPort:
-#servicePort:
-
 serviceType: ClusterIP
 containerEnv: []
 
