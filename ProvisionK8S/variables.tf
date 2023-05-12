@@ -4,12 +4,14 @@ variable "resource_group" {
 }
 
 variable "location" {
-  type = string
-  
+  type    = string
+  default = "West Europe"
 }
 
 variable "cluster_name" {
-  type = string
+  type        = string
+  default     = "AKS-01"
+  description = "the name of the kubernetes cluster"
 
 }
 
@@ -19,14 +21,13 @@ variable "kubernetes_version" {
 }
 
 variable "worker" {
-  type = number
+  type    = number
+  default = 1
 }
 
-
-variable "kube_path" {
-  type        = string
-  description = "path to store kube config file "
-  default     = "C:\\Users\\abdelali\\.kube\\config"
+variable "containerRegistryName" {
+  type    = string
+  default = "container67Registry199723"
 }
 
 
