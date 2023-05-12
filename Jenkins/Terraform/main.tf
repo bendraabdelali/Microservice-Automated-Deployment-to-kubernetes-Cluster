@@ -1,9 +1,4 @@
 # Create an Azure resource group
-# data "azurerm_resource_group" "rg" {
-#   name = var.resource_group
-
-# }
-
 resource "azurerm_resource_group" "rg" {
   name     = var.resource_group
   location = "West Europe"
