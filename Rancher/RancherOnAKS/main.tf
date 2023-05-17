@@ -1,6 +1,7 @@
 
-data "azurerm_resource_group" "rg" {
-  name = var.resource_group
+resource "azurerm_resource_group" "rg" {
+  name     = var.resource_group
+  location = var.location
 }
 
 # create k8s 
@@ -8,13 +9,13 @@ resource "azurerm_kubernetes_cluster" "aks" {
   name                = var.cluster_name
   kubernetes_version  = var.kubernetes_version
   location            = var.location
-  resource_group_name = data.azurerm_resource_group.rg.name
+  resource_group_name = azurerm_resource_group.rg.name
   dns_prefix          = var.cluster_name
   default_node_pool {
-    name                = "system"
-    node_count          = var.worker
-    vm_size             = "Standard_DS2_v2" 
-    type                = "VirtualMachineScaleSets"
+    name       = "system"
+    node_count = var.worker
+    vm_size    = "Standard_DS2_v2"
+    type       = "VirtualMachineScaleSets"
     # availability_zones  = [1, 2, 3]
     enable_auto_scaling = false
   }

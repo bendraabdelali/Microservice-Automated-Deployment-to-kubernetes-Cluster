@@ -5,7 +5,7 @@ variable "resource_group" {
 
 variable "location" {
   type = string
-  
+
 }
 
 variable "cluster_name" {

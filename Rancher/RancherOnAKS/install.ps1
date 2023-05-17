@@ -1,6 +1,6 @@
  # on the server rancher1
  # add helm
-curl -L https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
+#curl -L https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
 
  # add needed helm charts
 helm repo add rancher-latest https://releases.rancher.com/server-charts/latest
